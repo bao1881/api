@@ -21,7 +21,6 @@ return $images;
 }
 $root = '';
 $path = 'New folder/'; //tên thư mục chứa ảnh
-$demo = 'https://anotepad.com/note/read/28y7nda4'; //module lấy ảnh, thay link r sử dụng
 $list = jukie($root . $path);
 $link = 'https://bao2711.up.railway.app/';  //thay link relp/domain vào
 $img = jukiee($list);
@@ -34,9 +33,7 @@ $api1 = array(
 "data" => $link . $path . $img,
 "status" => "success",
 "count" => $duma,
-"author" => "D-Jukie",
-"demo module" => $demo,
-"Image source" => "D-Jukie"
+"author" => "Bao Nguyen",
 
 );
 $rdimg = json_encode($api1, JSON_UNESCAPED_SLASHES);
